@@ -1,8 +1,3 @@
-Sure! Below is an example of a `README.md` file that includes instructions on how to build the solution and details about the necessary `.env` files.
-
-### README.md
-
-````markdown
 # Event Registration and Ticket Checker
 
 This project is an event registration and ticket checking application built with React for the frontend and Flask for the backend. It uses Docker for containerization and PostgreSQL as the database.
@@ -30,7 +25,6 @@ Ensure you have the following installed on your machine:
 git clone https://github.com/your-username/your-repository.git
 cd your-repository
 ```
-````
 
 ### 2. Environment Variables
 
@@ -131,10 +125,3 @@ curl -X POST http://localhost:5001/register -H "Content-Type: application/json" 
 ## License
 
 This project is licensed under the MIT License.
-
-```
-
-### Summary
-
-This `README.md` provides a comprehensive guide for setting up and running the project. It includes information about the environment variables required for both the frontend and backend, instructions for building and running the Docker containers, and details about the project structure. Adjust the repository URL, email provider settings, and other placeholders as necessary to fit your specific project setup.
-```

@@ -1,0 +1,7 @@
+/* src/fonts.css */
+@font-face {
+  font-family: "Garamond";
+  src: url("../public/Garamond.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}

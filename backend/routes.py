@@ -1,5 +1,5 @@
 import qrcode
-from flask import request, jsonify, send_file
+from flask import request, jsonify
 from io import BytesIO
 from app import app, db, mail
 from models import Registration

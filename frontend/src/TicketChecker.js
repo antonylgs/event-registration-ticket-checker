@@ -51,7 +51,7 @@ function TicketChecker() {
       ></video>
       <div className="min-h-[100px]">
         {!status && (
-          <p className="font-garamond">Waiting for a ticket to be scanned...</p>
+          <p className="font-garamond">En attente d'un billet à scanner...</p>
         )}
         {status && (
           <div className="flex flex-col justify-center items-center gap-4 font-garamond">

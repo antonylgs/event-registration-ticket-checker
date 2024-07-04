@@ -134,16 +134,15 @@ function RegistrationForm() {
         <div className="flex gap-2 sm:justify-center sm:items-center">
           <input type="checkbox" className="cursor-pointer" required></input>
           <p className="text-[8px]">
-            J'accepte les termes et conditions de les heures Kintsuki et
-            reconnais avoir pris connaissance de la politique de
-            confidentialité.
+            J'accepte les termes et conditions de New Balance et reconnais avoir
+            pris connaissance de la politique de confidentialité.
           </p>
         </div>
         <button
           type="submit"
           className="bg-nbred text-white w-fit font-bold px-4 py-2 sm:m-auto hover:bg-black transition-all"
         >
-          Reçevoir mon billet
+          Recevoir mon billet
         </button>
       </form>
     </div>

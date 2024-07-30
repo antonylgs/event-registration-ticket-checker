@@ -6,7 +6,7 @@ function Header() {
     <div className="flex flex-col pb-6">
       <div className="w-screen relative right-4 h-20 bg-nbgray flex flex-col justify-end items-center gap-2 pb-2 px-4">
         <p className="text-xs font-bold text-center">
-          Livraison gratuite à partir de 100€ d'achat + Retours gratuits
+          Free delivery on orders over €100 + Free returns
         </p>
         <div className="flex gap-2">
           <div className="h-2 w-2 rounded-full bg-black"></div>
@@ -20,7 +20,7 @@ function Header() {
         <div className="relative hidden min-w-[400px] sm:flex">
           <input
             type="text"
-            placeholder="Rechercher"
+            placeholder="Search"
             className="w-full border border-ngbray h-10 px-2"
           ></input>
           <img
@@ -40,7 +40,7 @@ function Header() {
       <div className="relative sm:hidden">
         <input
           type="text"
-          placeholder="Rechercher"
+          placeholder="Search"
           className="w-full border border-ngbray h-10 px-2"
         ></input>
         <img

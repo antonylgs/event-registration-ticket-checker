@@ -42,16 +42,17 @@ function TicketChecker() {
   return (
     <div className="min-h-screen flex flex-col items-center justify-center gap-8">
       <h1 className="font-garamond text-2xl">
-        Festival Heritage Ticket Scanner
+        <span className="border-b-2 border-nbred">Heritage Festival</span>{" "}
+        Ticket Scanner
       </h1>
       <video
         ref={videoRef}
         className="rounded-lg"
-        style={{ width: "50%" }}
+        style={{ width: "60%" }}
       ></video>
       <div className="min-h-[100px]">
         {!status && (
-          <p className="font-garamond">En attente d'un billet à scanner...</p>
+          <p className="font-garamond">Waiting for a ticket to scan...</p>
         )}
         {status && (
           <div className="flex flex-col justify-center items-center gap-4 font-garamond">
@@ -61,13 +62,13 @@ function TicketChecker() {
                   status.error ? "bg-red-500" : "bg-green-500"
                 }`}
               ></div>
-              {status.error ? <p>Billet invalide</p> : <p>Billet valide</p>}
+              {status.error ? <p>Invalid ticket</p> : <p>Valid ticket</p>}
             </div>
 
             {!status.error && (
               <div>
                 <div className="flex justify-center items-center gap-2">
-                  <p>Samedi 10 Juillet: </p>
+                  <p>Saturday, July 10th: </p>
                   <div
                     className={`w-4 h-4 rounded-full relative bottom-[1.5px] ${
                       status.day1 ? "bg-green-500" : "bg-red-500"
@@ -76,7 +77,7 @@ function TicketChecker() {
                 </div>
 
                 <div className="flex justify-center items-center gap-2">
-                  <p>Dimanche 11 Juillet: </p>
+                  <p>Sunday, July 11th: </p>
                   <div
                     className={`w-4 h-4 rounded-full relative bottom-[1.5px] ${
                       status.day2 ? "bg-green-500" : "bg-red-500"

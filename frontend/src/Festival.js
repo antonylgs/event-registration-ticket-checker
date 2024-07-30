@@ -59,7 +59,7 @@ function Festival() {
       </div>
       <Link to="/festivalregistration">
         <button className="bg-nbred text-white font-bold px-4 py-2 hover:bg-black transition-all">
-          Participer au festival
+          REGISTER TO THE HERITAGE FESTIVAL
         </button>
       </Link>
     </div>

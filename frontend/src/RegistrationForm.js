@@ -35,7 +35,7 @@ function RegistrationForm() {
     const isPhoneValid = isValidPhoneNumber(formData.phone);
 
     if (!isPhoneValid) {
-      alert("Le numéro de téléphone n'est pas valide.");
+      alert("The phone number is invalid.");
       return;
     }
 
@@ -56,7 +56,7 @@ function RegistrationForm() {
   return (
     <div className="flex flex-col gap-8 mb-8">
       <h1 className="font-garamond text-2xl text-nbred sm:text-center">
-        PARTICIPER AU FESTIVAL
+        REGISTER TO THE HERITAGE FESTIVAL
       </h1>
       <form onSubmit={handleSubmit} className="flex flex-col gap-8">
         <div className="flex gap-12 m-auto justify-center">
@@ -65,9 +65,9 @@ function RegistrationForm() {
               formData.day1 && "bg-black text-white"
             }`}
           >
-            <p>Samedi</p>
+            <p>Saturday</p>
             <p className="font-bold text-lg">10</p>
-            <p>Juillet</p>
+            <p>July</p>
             <input
               type="checkbox"
               name="day1"
@@ -81,9 +81,9 @@ function RegistrationForm() {
               formData.day2 && "bg-black text-white"
             }`}
           >
-            <p>Dimanche</p>
+            <p>Sunday</p>
             <p className="font-bold text-lg">11</p>
-            <p>Juillet</p>
+            <p>July</p>
             <input
               type="checkbox"
               name="day2"
@@ -99,7 +99,7 @@ function RegistrationForm() {
             <input
               type="text"
               name="name"
-              placeholder="Nom"
+              placeholder="Name"
               className="border-b sm:min-w-[300px] border-black w-full px-3 focus:outline-none"
               value={formData.name}
               onChange={handleChange}
@@ -111,7 +111,7 @@ function RegistrationForm() {
             <input
               type="email"
               name="email"
-              placeholder="E-mail"
+              placeholder="Email"
               className="border-b sm:min-w-[300px] border-black w-full px-3 focus:outline-none"
               value={formData.email}
               onChange={handleChange}
@@ -123,7 +123,7 @@ function RegistrationForm() {
             <input
               type="text"
               name="phone"
-              placeholder="Numéro de téléphone"
+              placeholder="Phone"
               className="border-b sm:min-w-[300px] border-black w-full px-3 focus:outline-none"
               value={formData.phone}
               onChange={handleChange}
@@ -134,15 +134,15 @@ function RegistrationForm() {
         <div className="flex gap-2 sm:justify-center sm:items-center">
           <input type="checkbox" className="cursor-pointer" required></input>
           <p className="text-[8px]">
-            J'accepte les termes et conditions de New Balance et reconnais avoir
-            pris connaissance de la politique de confidentialité.
+            I accept the terms and conditions of the company and acknowledge
+            having read the privacy policy.
           </p>
         </div>
         <button
           type="submit"
           className="bg-nbred text-white w-fit font-bold px-4 py-2 sm:m-auto hover:bg-black transition-all"
         >
-          Recevoir mon billet
+          Get my ticket
         </button>
       </form>
     </div>

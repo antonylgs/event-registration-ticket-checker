@@ -111,17 +111,17 @@ def register():
     <body>
         <div class="container">
             <div class="header">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/New_Balance_logo.svg/2560px-New_Balance_logo.svg.png" alt="Logo de New Balance">
-                <h1>Votre billet pour le New Balance Festival Heritage</h1>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/New_Balance_logo.svg/2560px-New_Balance_logo.svg.png" alt="New Balance logo">
+                <h1>Your ticket for the Heritage Festival</h1>
             </div>
             <div class="content">
-                <p>Bonjour {name},</p>
-                <p>Merci de vous être inscrit à notre événement. Votre ID de billet est <strong>{ticket_id}</strong>.</p>
-                <p>Veuillez présenter ce QR Code à l'entrée de l'événement.</p>
-                <img src="cid:qrcode" alt="Code QR">
+                <p>Hello {name},</p>
+                <p>Thank you for registering for our event. Your ticket ID is <strong>{ticket_id}</strong>.</p>
+                <p>Please present this QR Code at the event entrance.</p>
+                <img src="cid:qrcode" alt="QR Code">
             </div>
             <div class="footer">
-                <p>&copy; 2024 Organisateur de l'événement. Tous droits réservés.</p>
+                <p>&copy; 2024 Event Organizer. All rights reserved.</p>
             </div>
         </div>
     </body>
@@ -129,7 +129,7 @@ def register():
     """
 
     msg = Message(
-        "New Balance Festival Heritage",
+        "Your ticket for the Heritage Festival",
         sender=app.config["MAIL_DEFAULT_SENDER"],
         recipients=[email],
     )

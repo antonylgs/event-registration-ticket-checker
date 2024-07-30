@@ -25,22 +25,22 @@ function Footer() {
             <img src="/nb-tiktok.svg"></img>
           </Link>
         </nav>
-        <div className="flex gap-4">
-          <p className="text-nbgraytext">Changer de région : </p>
-          <img src="/nb-france.svg"></img>
-          <p className="text-nbgraytext">FR</p>
+        <div className="flex gap-4 items-center">
+          <p className="text-nbgraytext">Change region: </p>
+          <img src="/nb-us.jpg" className="h-[16px]"></img>
+          <p className="text-nbgraytext">EN</p>
         </div>
       </div>
       <div className="w-screen relative right-4 bg-nbgray flex flex-col lg:flex-row sm:justify-between gap-4 p-4 pb-20 lg:pb-12">
         <div className="flex flex-col lg:flex-row lg:gap-8">
           <Link to="">
-            <p className="underline">Politique de confidentialité</p>
+            <p className="underline">Privacy policy</p>
           </Link>
           <Link to="">
-            <p className="underline">Conditions générales</p>
+            <p className="underline">General terms and conditions</p>
           </Link>
           <Link to="">
-            <p className="underline">Paramètres des cookies</p>
+            <p className="underline">Cookie settings</p>
           </Link>
         </div>
 

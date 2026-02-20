@@ -22,7 +22,7 @@ Ensure you have the following installed on your machine:
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/your-repository.git
+git clone https://github.com/antonylgs/event-registration-ticket-checker.git
 cd your-repository
 ```
 
